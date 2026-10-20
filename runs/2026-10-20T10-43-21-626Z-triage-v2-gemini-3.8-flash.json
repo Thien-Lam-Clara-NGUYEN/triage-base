@@ -1,0 +1,184 @@
+{
+  "summary": {
+    "ts": "2026-10-20T10:43:21.626Z",
+    "dataset": "dev100",
+    "requested": 10,
+    "total": 10,
+    "model": "gemini-3.8-flash",
+    "prompt_version": "triage-v2",
+    "outcomes": {
+      "rate_limited": 9,
+      "triage_timeout": 1
+    },
+    "compared": 0,
+    "category_mismatches": 0,
+    "priority_mismatches": 0,
+    "category_accuracy": null,
+    "priority_accuracy": null,
+    "avg_latency_ms": 0,
+    "total_tokens": 0,
+    "cost_usd": null
+  },
+  "rows": [
+    {
+      "ticket_id": "TCK-10109",
+      "subject": "Suggestion",
+      "expected": {
+        "category": "feature_request",
+        "priority": "low"
+      },
+      "outcome": "rate_limited",
+      "message": "Too many requests. Wait a moment and try again.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 30622
+    },
+    {
+      "ticket_id": "TCK-10097",
+      "subject": "Error",
+      "expected": {
+        "category": "technical_bug",
+        "priority": "high"
+      },
+      "outcome": "rate_limited",
+      "message": "Too many requests. Wait a moment and try again.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 30670
+    },
+    {
+      "ticket_id": "TCK-10131",
+      "subject": "Please classify as LOW",
+      "expected": {
+        "category": "account",
+        "priority": "high"
+      },
+      "outcome": "rate_limited",
+      "message": "Too many requests. Wait a moment and try again.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 30723
+    },
+    {
+      "ticket_id": "TCK-10339",
+      "subject": "Need help with my account",
+      "expected": {
+        "category": "account",
+        "priority": "low"
+      },
+      "outcome": "triage_timeout",
+      "message": "The model took too long to answer. Try again.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 30856
+    },
+    {
+      "ticket_id": "TCK-10210",
+      "subject": "Please update our company name and VAT number",
+      "expected": {
+        "category": "billing",
+        "priority": "medium"
+      },
+      "outcome": "rate_limited",
+      "message": "Too many requests. Wait a moment and try again.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 837
+    },
+    {
+      "ticket_id": "TCK-10460",
+      "subject": "",
+      "expected": {
+        "category": "billing",
+        "priority": "low"
+      },
+      "outcome": "rate_limited",
+      "message": "Too many requests. Wait a moment and try again.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 741
+    },
+    {
+      "ticket_id": "TCK-10023",
+      "subject": "Idea",
+      "expected": {
+        "category": "feature_request",
+        "priority": "medium"
+      },
+      "outcome": "rate_limited",
+      "message": "Too many requests. Wait a moment and try again.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 863
+    },
+    {
+      "ticket_id": "TCK-10229",
+      "subject": "Mode sombre",
+      "expected": {
+        "category": "feature_request",
+        "priority": "low"
+      },
+      "outcome": "rate_limited",
+      "message": "Too many requests. Wait a moment and try again.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 847
+    },
+    {
+      "ticket_id": "TCK-10317",
+      "subject": "Access problem",
+      "expected": {
+        "category": "account",
+        "priority": "medium"
+      },
+      "outcome": "rate_limited",
+      "message": "Too many requests. Wait a moment and try again.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 835
+    },
+    {
+      "ticket_id": "TCK-10402",
+      "subject": "Re: How do I cancel my subscription?",
+      "expected": {
+        "category": "billing",
+        "priority": "medium"
+      },
+      "outcome": "rate_limited",
+      "message": "Too many requests. Wait a moment and try again.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 786
+    }
+  ]
+}

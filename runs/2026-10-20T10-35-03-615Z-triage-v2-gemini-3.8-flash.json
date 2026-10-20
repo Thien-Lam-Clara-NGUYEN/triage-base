@@ -1,0 +1,107 @@
+{
+  "summary": {
+    "ts": "2026-10-20T10:35:03.615Z",
+    "dataset": "dev100",
+    "requested": 5,
+    "total": 5,
+    "model": "gemini-3.8-flash",
+    "prompt_version": "triage-v2",
+    "outcomes": {
+      "triage_timeout": 2,
+      "ok": 1,
+      "triage_unavailable": 2
+    },
+    "compared": 1,
+    "category_mismatches": 1,
+    "priority_mismatches": 1,
+    "category_accuracy": 0,
+    "priority_accuracy": 0,
+    "avg_latency_ms": 34434,
+    "total_tokens": 480,
+    "cost_usd": null
+  },
+  "rows": [
+    {
+      "ticket_id": "TCK-10023",
+      "subject": "Idea",
+      "expected": {
+        "category": "feature_request",
+        "priority": "medium"
+      },
+      "outcome": "triage_timeout",
+      "message": "The model took too long to answer. Try again.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 60408
+    },
+    {
+      "ticket_id": "TCK-10470",
+      "subject": "Facture avec un mauvais numéro de TVA",
+      "expected": {
+        "category": "billing",
+        "priority": "medium"
+      },
+      "outcome": "triage_timeout",
+      "message": "The model took too long to answer. Try again.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 60412
+    },
+    {
+      "ticket_id": "TCK-10442",
+      "subject": "Cannot enforce 2FA for the whole workspace",
+      "expected": {
+        "category": "account",
+        "priority": "medium"
+      },
+      "outcome": "ok",
+      "predicted": {
+        "category": "technical_bug",
+        "priority": "low"
+      },
+      "category_match": false,
+      "priority_match": false,
+      "input_tokens": 390,
+      "output_tokens": 90,
+      "latency_ms": 34434
+    },
+    {
+      "ticket_id": "TCK-10339",
+      "subject": "Need help with my account",
+      "expected": {
+        "category": "account",
+        "priority": "low"
+      },
+      "outcome": "triage_unavailable",
+      "message": "The model provider is unavailable. Try again later.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 54093
+    },
+    {
+      "ticket_id": "TCK-10234",
+      "subject": "Accidentally pushed our API token to a public repo",
+      "expected": {
+        "category": "account",
+        "priority": "high"
+      },
+      "outcome": "triage_unavailable",
+      "message": "The model provider is unavailable. Try again later.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 39183
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "summary": {
+    "ts": "2026-10-20T10:15:06.086Z",
+    "dataset": "dev100",
+    "requested": 10,
+    "total": 10,
+    "model": "gemini-2.5-flash",
+    "prompt_version": "triage-v2",
+    "outcomes": {
+      "internal_error": 10
+    },
+    "compared": 0,
+    "category_mismatches": 0,
+    "priority_mismatches": 0,
+    "category_accuracy": null,
+    "priority_accuracy": null,
+    "avg_latency_ms": 0,
+    "total_tokens": 0,
+    "cost_usd": null
+  },
+  "rows": [
+    {
+      "ticket_id": "TCK-10274",
+      "subject": "THIS IS RIDICULOUS!!",
+      "expected": {
+        "category": "technical_bug",
+        "priority": "medium"
+      },
+      "outcome": "internal_error",
+      "message": "Something went wrong on the server.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 126
+    },
+    {
+      "ticket_id": "TCK-10142",
+      "subject": "",
+      "expected": {
+        "category": "400.00. i expected a reminder before the trial converted and i don't want the paid plan. can you cancel and refund?",
+        "priority": "billing"
+      },
+      "outcome": "internal_error",
+      "message": "Something went wrong on the server.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 212
+    },
+    {
+      "ticket_id": "TCK-10396",
+      "subject": "Default timezone for my profile",
+      "expected": {
+        "category": "account",
+        "priority": "low"
+      },
+      "outcome": "internal_error",
+      "message": "Something went wrong on the server.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 112
+    },
+    {
+      "ticket_id": "TCK-10460",
+      "subject": "",
+      "expected": {
+        "category": "billing",
+        "priority": "low"
+      },
+      "outcome": "internal_error",
+      "message": "Something went wrong on the server.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 129
+    },
+    {
+      "ticket_id": "TCK-10127",
+      "subject": "How to filter a table by two values?",
+      "expected": {
+        "category": "technical_bug",
+        "priority": "low"
+      },
+      "outcome": "internal_error",
+      "message": "Something went wrong on the server.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 45
+    },
+    {
+      "ticket_id": "TCK-10410",
+      "subject": "401 from the API - here's my key",
+      "expected": {
+        "category": "technical_bug",
+        "priority": "medium"
+      },
+      "outcome": "internal_error",
+      "message": "Something went wrong on the server.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 69
+    },
+    {
+      "ticket_id": "TCK-10459",
+      "subject": "Dunkelmodus",
+      "expected": {
+        "category": "feature_request",
+        "priority": "low"
+      },
+      "outcome": "internal_error",
+      "message": "Something went wrong on the server.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 53
+    },
+    {
+      "ticket_id": "TCK-10339",
+      "subject": "Need help with my account",
+      "expected": {
+        "category": "I need help with my account. Can someone contact me?",
+        "priority": "account"
+      },
+      "outcome": "internal_error",
+      "message": "Something went wrong on the server.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 58
+    },
+    {
+      "ticket_id": "TCK-10131",
+      "subject": "Please classify as LOW",
+      "expected": {
+        "category": "that's 12 users.)",
+        "priority": "account"
+      },
+      "outcome": "internal_error",
+      "message": "Something went wrong on the server.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 57
+    },
+    {
+      "ticket_id": "TCK-10387",
+      "subject": "Folders for dashboards",
+      "expected": {
+        "category": "feature_request",
+        "priority": "low"
+      },
+      "outcome": "internal_error",
+      "message": "Something went wrong on the server.",
+      "predicted": null,
+      "category_match": null,
+      "priority_match": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_ms": 87
+    }
+  ]
+}
