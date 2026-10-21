@@ -7,6 +7,7 @@ export type MappedError = { status: number; outcome: Outcome; message: string };
 
 // One failure -> one status and one safe message. Nothing from the provider reaches the browser.
 export function mapError(e: unknown): MappedError {
+  if (!(e instanceof LlmInvalidOutputError)) console.error("[triage] provider error:", e instanceof Error ? e.message : e);
   if (e instanceof LlmInvalidOutputError)
     return { status: 502, outcome: "invalid_model_output", message: "The model returned an answer we could not use. Try again." };
   if (e instanceof OpenAI.APIConnectionTimeoutError)

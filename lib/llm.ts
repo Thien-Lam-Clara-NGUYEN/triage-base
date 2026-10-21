@@ -9,9 +9,9 @@ function getClient(): OpenAI {
   if (!_client) {
     _client = new OpenAI({
       baseURL: process.env.LLM_BASE_URL,
-      apiKey: process.env.LLM_API_KEY, // server only, never sent to the browser
-      timeout: 30_000, // per attempt
-      maxRetries: 1,
+      apiKey: process.env.LLM_API_KEY,
+      timeout: 60_000,
+      maxRetries: 2,
     });
   }
   return _client;

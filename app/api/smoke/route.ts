@@ -37,7 +37,7 @@ export async function POST(req: Request) {
   const chosen = sample(tickets, n);
   const model = process.env.LLM_MODEL ?? "unknown";
 
-  const rows: SmokeRow[] = await pool(chosen, 4, async (t) => {
+  const rows: SmokeRow[] = await pool(chosen, 2, async (t) => {
     const expected = labels?.get(t.ticket_id) ?? null;
     const base = { ticket_id: t.ticket_id, subject: t.subject, expected };
     const check = TriageRequestSchema.safeParse({ ticket: ticketText(t) });
